@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ML Hackathon - Participation Certificate</title>
+    
+    <!-- Use absolute path to CSS -->
+    <link rel="stylesheet" href="style.css">
+
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background: #fff;
+            margin: 0;
+            padding: 30px;
+        }
+        .certificate {
+            border: 10px solid #333;
+            padding: 50px;
+            position: relative;
+        }
+        .certificate-title {
+            font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .certificate-subtitle {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        .participant-name {
+            font-size: 28px;
+            font-weight: bold;
+            margin: 20px 0;
+        }
+        .event-name {
+            font-size: 22px;
+            font-weight: bold;
+        }
+        .signatures {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 50px;
+        }
+        .signature-line {
+            border-top: 1px solid #000;
+            padding-top: 5px;
+            font-weight: bold;
+        }
+        .logos-container {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 20px;
+        }
+        .logo {
+            height: 80px;
+        }
+    </style>
+</head>
+<body>
+    <div class="certificate">
+        <div class="logos-container">
+            <img src="./assets/iiit-logo.png" alt="IIIT Hyderabad Logo" class="logo">
+            <img src="./assets/kiet-logo.png" alt="KIET Logo" class="logo">
+        </div>
+        
+        <h1 class="certificate-title">Certificate of Participation</h1>
+        <p class="certificate-subtitle">This is to certify that</p>
+        
+        <h2 class="participant-name">{{Name}}</h2>
+        
+        <p>For active participation and demonstrating exceptional enthusiasm in the</p>
+        <h3 class="event-name">Machine Learning Hackathon</h3>
+        <p>Organized on August 9-10, 2025</p>
+        
+        <p>Roll Number: {{Roll_number}}</p>
+        <p>Department: {{Department}}</p>
+        
+        <div class="signatures">
+            <div class="signature">
+                <div class="signature-line">Principal Revathi</div>
+                <p>Principal, KIET</p>
+            </div>
+            <div class="signature">
+                <div class="signature-line">Principal Ramakrishna</div>
+                <p>Principal, KIETW</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
